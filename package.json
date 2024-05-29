@@ -1,7 +1,7 @@
 {
   "name": "karma-test-runner",
   "version": "0.0.1",
-  "description": "",
+  "description": "karma test runner.",
   "main": "index.js",
   "scripts": {
     "test": "karma start ./karma.conf.js",

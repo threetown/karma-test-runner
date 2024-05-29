@@ -1,0 +1,12 @@
+{
+  "name": "karma-test-runner",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "leon (https://hi.threetowns.cn/)",
+  "license": "MIT"
+}

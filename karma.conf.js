@@ -27,8 +27,32 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://www.npmjs.com/search?q=keywords:karma-preprocessor
     preprocessors: {
+      // add webpack as preprocessor
+      'src/**/*.js': ['webpack'],
+      'test/**/*.js': ['webpack']
     },
 
+    webpack: {
+      mode: 'development',
+      module: {
+        rules: [
+          {
+            // 匹配 JavaScript 文件
+            test: /\.js$/,
+            // 排除 node_modules 和 bower_components 目录
+            exclude: /(node_modules|bower_components)/,
+            use: {
+              // 使用的 loader
+              loader: 'babel-loader',
+              // 传递给 babel-loader 的参数
+              options: {
+                presets: ['@babel/preset-env']
+              }
+            }
+          }
+        ]
+      }
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'

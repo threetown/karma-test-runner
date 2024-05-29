@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - 10
+
+# use xvfb to display in GUI
+services:
+  - xvfb
+
+addons:
+  chrome: stable
+
+script:
+  - npm run test
+
+after_script:
+  - npm run codecov

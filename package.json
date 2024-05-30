@@ -4,8 +4,9 @@
   "description": "karma test runner.",
   "main": "index.js",
   "scripts": {
-    "test": "karma start ./karma.conf.js",
-    "codecov": "./node_modules/.bin/codecov"
+    "bootstrap": "yarn || npm i",
+    "codecov": "./node_modules/.bin/codecov",
+    "test": "karma start ./karma.conf.js"
   },
   "keywords": [],
   "author": "leon (https://hi.threetowns.cn/)",

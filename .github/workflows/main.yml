@@ -17,17 +17,16 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
-      - uses: actions/setup-node@v1
-      - uses: actions/cache@v2
+      - name: Install node.js
+        uses: actions/setup-node@v1
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 14.21.3
 
-      - name: Install and Test
+      - name: Install Dependencies
+        run: npm install
+
+      - name: test
         run: |
-          npm install
           npm run test
           npm run codecov
 

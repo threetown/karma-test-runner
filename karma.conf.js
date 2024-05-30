@@ -71,7 +71,7 @@ module.exports = function(config) {
     },
 
     // web server port
-    port: 9876,
+    // port: 9876,
 
 
     // enable / disable colors in the output (reporters and logs)
@@ -89,7 +89,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://www.npmjs.com/search?q=keywords:karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
 
 
     // Continuous Integration mode

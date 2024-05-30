@@ -17,6 +17,13 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
+      - name: Install and Test
+        run: |
+          npm install
+          npm run test
+          npm run codecov
+
+      # 通过CODECOV_TOKEN使用ecov/codecov-action@v4.0.1上传.info文件
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
         with:

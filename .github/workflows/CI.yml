@@ -1,8 +1,6 @@
 name: GitHub Actions CI
 run-name: ${{ github.actor }} is CI out GitHub Actions 🚀
-on:
-  pull_request:
-    branches: [*]
+on: [push]
 jobs:
   # 只需要定义一个job并命名为CI
   Continuous-Integration:
@@ -41,7 +39,7 @@ jobs:
         # 通过前面章节定义的命令行执行自动化测试
         run: npm run test
 
-        - name: Run the tests and generate coverage report（生成代码覆盖率报告）
+      - name: Run the tests and generate coverage report（生成代码覆盖率报告）
         run: |
           npm run codecov
 

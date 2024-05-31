@@ -16,3 +16,4 @@
 * **Merge your pull request**
 * **Delete your branch**
 
+[Github flow](https://docs.github.com/get-started/using-github/github-flow)

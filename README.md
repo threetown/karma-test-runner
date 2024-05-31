@@ -1,6 +1,6 @@
 ## karma
 
-[![codecov](https://codecov.io/gh/threetown/karma-test-runner/branch/master/graph/badge.svg?token=26ZOZXOHLX)](https://codecov.io/gh/threetown/karma-test-runner) ![example workflow](https://github.com/threetown/karma-test-runner/actions/workflows/main.yml/badge.svg) 
+[![codecov](https://codecov.io/gh/threetown/karma-test-runner/branch/master/graph/badge.svg?token=26ZOZXOHLX)](https://codecov.io/gh/threetown/karma-test-runner) ![example workflow](https://github.com/threetown/karma-test-runner/actions/workflows/main.yml/badge.svg)  ![example workflow](https://github.com/threetown/karma-test-runner/actions/workflows/CI.yml/badge.svg) 
 
 
 

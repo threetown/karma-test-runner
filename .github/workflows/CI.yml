@@ -1,8 +1,6 @@
 name: GitHub Actions CI
 run-name: ${{ github.actor }} is CI out GitHub Actions 🚀
-on:
-  pull_request:
-    branches: [*]
+on: [push]
 jobs:
   # 只需要定义一个job并命名为CI
   Continuous-Integration:
